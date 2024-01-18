@@ -13,8 +13,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
-    <!-- will create separate jsfile trying first -->
-
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Playstation World</title>
   </head>
@@ -56,7 +58,7 @@
           <div
             class="col-lg-2 d-flex justify-content-center align-items-center d-none d-sm-block text-center"
           >
-            <a href="login-page.html" class="mx-2 nav_text">
+            <a href="#" class="mx-2 nav_text">
               <span class="material-symbols-outlined mt-1 py-1">person</span>
             </a>
             <a href="cart-page.html" class="mx-2 nav_text">
@@ -154,49 +156,115 @@
     </nav>
 
     <!-- CONTENT -->
-    <div class="container-fluid mt-5 mb-5">
-      <div class="container" id="shop_border">
-        <div class="row m-3">
-          <div class="row align-items-center justify-content-between">
-            <div class="col-lg-3">
-              <select class="form-select" id="pcategories-dropdown">
-                <option value="select_genre" selected disabled>
-                  Select product category...
-                </option>
-                <option value="action">Action</option>
-                <option value="rpg">RPG</option>
-              </select>
+    <div class="container-fluid">
+      <div class="container my-3">
+        <div class="row">
+          <div class="col-lg-4 my-4 text-center">
+            <a href="#">
+              <img
+                src="img/my_acct/my_dp2.jpg"
+                class="img-fluid"
+                id="dp_myacct"
+              />
+            </a>
+            <button class="btn btn-primary mt-3">Edit/Upload Picture</button>
+          </div>
+          <div class="col-lg-8 my-4">
+            <div class="text-center">
+              <h1 class="display-4 my-3">My Profile</h1>
             </div>
-            <div class="col-lg-9 text-end">
-              <a href="shop_game.html" id="prod_link">Games</a> |
-              <strong>Console & Accessories</strong>
+            <div>
+              <p class="ms-5 fs-3 mt-4">
+                <strong>Name:</strong> Juan Dela Cruz
+              </p>
+              <p class="ms-5 fs-3"><strong>Gender:</strong> Male</p>
+              <p class="ms-5 fs-3">
+                <strong>Mobile Number:</strong> 09123456789
+              </p>
+              <p class="ms-5 fs-3">
+                <strong>Email Address:</strong> jdelacruz@gmail.com
+              </p>
             </div>
           </div>
-          <hr class="my-3" />
-          <div class="row" id="card_game_display">
-            <!-- id="card_game_display" => append here -->
-            <!-- Sample -->
-            <div class="col-lg-3">
-              <div class="card h-100 card-product">
-                <img
-                  src="img/access_card.webp"
-                  class="img-fluid card-img-top"
-                  alt="item_name"
-                />
-                <div class="card-body">
-                  <hr />
-                  <h2 class="card_name">Item_name</h2>
-                  <p class="card_price">₱9,9990.00</p>
+          <hr class="my-4 my-4" />
+          <div class="text-center">
+            <h1 class="display-4 my-3">My Address</h1>
+          </div>
+          <div>
+            <table class="table">
+              <tr>
+                <th>Address</th>
+                <th>Recipient</th>
+                <th>Mobile Number</th>
+              </tr>
+              <tr>
+                <td>
+                  123 Sawani Mari St. Maharlika Compound San Isidro Paranaque
+                  City Metro Manila
+                </td>
+                <td>Maria Magdalena</td>
+                <td>09123456788</td>
+              </tr>
+              <tbody id="add_address"></tbody>
+            </table>
+          </div>
+          <div class="row text-center">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+              <h1 class="display-5 my-3">Add Address</h1>
+              <form>
+                <p class="text-danger" id="myacct_warning">
+                  *Available in Metro Manila only, for outside Metro Manila
+                  kindly visit us in our Shopee or Lazada page
+                </p>
+                <label class="form-label" for="r_region">Region</label>
+                <select class="form-select form-control">
+                  <option selected>Metro Manila</option>
+                </select>
+
+                <label class="form-label" for="r_city">City</label>
+                <select class="form-select form-control" id="r_city">
+                  <option value="caloocan">Caloocan</option>
+                  <option value="makati">Makati</option>
+                  <option value="mandaluyong">Mandaluyong</option>
+                  <option value="manila">Manila</option>
+                  <option value="marikina">Marikina</option>
+                  <option value="muntinlupa">Muntinlupa</option>
+                  <option value="paranaque">Paranaque</option>
+                  <option value="pasay">Pasay</option>
+                  <option value="pasig">Pasig</option>
+                  <option value="quezon">Quezon City</option>
+                  <option value="taguig">Taguig</option>
+                  <option value="valenzuela">Valenzuela</option>
+                </select>
+
+                <label class="form-label" for="r_barangay">Barangay</label>
+                <input type="text" id="r_barangay" class="form-control" />
+
+                <label class="form-label" for="r_street"
+                  >Street Name, Bldg/House No.</label
+                >
+                <input type="text" id="r_street" class="form-control" />
+
+                <label class="form-label" for="r_name">Recipient's Name</label>
+                <input type="text" id="r_name" class="form-control" />
+
+                <label class="form-label" for="r_number">Mobile Number</label>
+                <div class="input-group mb-4">
+                  <span class="input-group-text">+63</span>
+                  <input type="number" id="r_number" class="form-control" />
                 </div>
-              </div>
+                <input type="submit" class="btn btn-success" />
+              </form>
             </div>
-            <!--  -->
+            <div class="col-lg-3"></div>
           </div>
         </div>
       </div>
     </div>
+
     <!-- Footer -->
-    <div class="container-fluid" id="footer-container">
+    <div class="container-fluid mt-5" id="footer-container">
       <br />
       <br />
       <div class="container" id="footer-container2">

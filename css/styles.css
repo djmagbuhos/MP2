@@ -94,6 +94,12 @@
   font-size: 1rem; /* Adjust font size as needed */
 }
 
+#imageCarousel2 .carousel-control-prev,
+#imageCarousel2 .carousel-control-next {
+  width: auto; /* Set width to auto */
+  font-size: 1rem; /* Adjust font size as needed */
+}
+
 .hot_arrow_button {
   border-radius: 50%; /* Make buttons round */
   background-color: rgb(95, 95, 95); /* Set background color to gray */
@@ -108,6 +114,18 @@
   border: 1px solid;
   border-radius: 25px;
   border-color: rgb(172, 172, 172);
+}
+
+/* My Acct */
+
+#dp_myacct {
+  border-radius: 500px;
+  overflow: hidden;
+  border: 2px solid black;
+}
+
+#myacct_warning {
+  font-size: 12px;
 }
 
 /* Footer */
