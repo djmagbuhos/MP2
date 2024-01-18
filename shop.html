@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Playstation World</title>
+  </head>
+  <body>
+    <!-- TOP NAV -->
+
+    <div class="container-fluid d-none d-sm-block" id="psw_topnav">
+      <div class="container">
+        <div class="row py-3" id="psw_topnav2">
+          <div
+            class="col-lg-4 d-flex justify-content-center align-items-center d-none d-sm-block"
+          >
+            <a href="#"
+              ><img
+                src="img/psw-logo.png"
+                alt="weblogo"
+                id="logo"
+                width="300px"
+            /></a>
+          </div>
+
+          <div class="col-lg-6">
+            <form class="d-flex d-none d-sm-block">
+              <div>
+                <div class="input-group">
+                  <input type="search" class="form-control" id="search-bar" />
+                  <span class="input-group-text" id="search-bar-2"
+                    ><a href="#" class="text-dark"
+                      ><span class="material-symbols-outlined align-middle">
+                        search
+                      </span></a
+                    ></span
+                  >
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div
+            class="col-lg-2 d-flex justify-content-center align-items-center d-none d-sm-block text-center"
+          >
+            <a href="login-page.html" class="mx-2 nav_text">
+              <span class="material-symbols-outlined mt-1 py-1">person</span>
+            </a>
+            <a href="cart-page.html" class="mx-2 nav_text">
+              <span class="material-symbols-outlined mt-1 py-1"
+                >shopping_cart</span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-light" id="psw_navbar">
+      <div class="container-fluid">
+        <div class="container" id="nav_container">
+          <button
+            class="navbar-toggler text-white"
+            data-bs-toggle="collapse"
+            data-bs-target="#site-navbar"
+          >
+            <span class="navbar-toggler-icon"></span></button
+          ><a href="#"
+            ><img
+              src="img/psw-logo-white.png"
+              class="ms-4 d-sm-none"
+              alt="weblogo"
+              id="logo"
+              width="200px"
+          /></a>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="site-navbar"
+          >
+            <ul class="navbar-nav w-100 nav-fill">
+              <li class="nav-item">
+                <a class="nav-link nav_link" href="#"> <strong>Home</strong></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link nav_link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  id="shop_now_dd"
+                  ><strong>Shop Now</strong></a
+                >
+                <ul class="dropdown-menu w-100 dd_shopnow">
+                  <li>
+                    <a
+                      class="li_dd dropdown-item text-center text-light"
+                      href="#"
+                    >
+                      GAMES</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="li_dd dropdown-item text-center text-light"
+                      href="#"
+                    >
+                      ACCESSORIES</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav_link" href="#">
+                  <strong>About Us </strong></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav_link" href="#">
+                  <strong>Contact Us </strong></a
+                >
+              </li>
+              <div class="d-sm-none">
+                <li class="nav-item">
+                  <a class="nav-link nav_link" href="#">
+                    <strong>My Cart </strong></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav_link" href="#">
+                    <strong>My Account </strong></a
+                  >
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CONTENT -->
+    
+    <!-- Footer -->
+    <div class="container-fluid" id="footer-container">
+      <br />
+      <br />
+      <div class="container" id="footer-container2">
+        <div class="row">
+          <div class="col-lg-3">
+            <p class="fs-5"><strong>CUSTOMER SERVICE</strong></p>
+            <p class="fs-6">
+              <a href="#" class="footer_link text-decoration-none"
+                >Cancellation Policy</a
+              >
+            </p>
+            <p class="fs-6">
+              <a href="#" class="footer_link text-decoration-none">Delivery</a>
+            </p>
+            <p class="fs-6">
+              <a href="#" class="footer_link text-decoration-none"
+                >Order And Payments</a
+              >
+            </p>
+            <p class="fs-6">
+              <a href="#" class="footer_link text-decoration-none"
+                >Privacy Policy</a
+              >
+            </p>
+            <p class="fs-6">
+              <a href="#" class="footer_link text-decoration-none"
+                >Return and Refunds</a
+              >
+            </p>
+            <p class="fs-6">
+              <a href="#" class="footer_link text-decoration-none"
+                >Service Area Directory</a
+              >
+            </p>
+            <p class="fs-6">
+              <a href="#" class="footer_link text-decoration-none"
+                >Terms and Conditions</a
+              >
+            </p>
+            <p class="fs-6">
+              <a href="#" class="footer_link text-decoration-none"
+                >Warranty Information</a
+              >
+            </p>
+            <p class="fs-6">
+              <a href="#" class="footer_link text-decoration-none"
+                >Warranty Policy</a
+              >
+            </p>
+          </div>
+          <div class="col-lg-3">
+            <p class="fs-5"><strong>COMPANY</strong></p>
+            <p class="fs-6">
+              <a href="#" class="footer_link text-decoration-none">Careers</a>
+            </p>
+            <p class="fs-6">
+              <a href="#" class="footer_link text-decoration-none"
+                >Contact Us</a
+              >
+            </p>
+            <p class="fs-6">
+              <a href="#" class="footer_link text-decoration-none">FAQs</a>
+            </p>
+            <p class="fs-6">
+              <a href="#" class="footer_link text-decoration-none"
+                >News and Articles</a
+              >
+            </p>
+            <p class="fs-6">
+              <a href="#" class="footer_link text-decoration-none"
+                >Our Company</a
+              >
+            </p>
+            <p class="fs-6">
+              <a href="#" class="footer_link text-decoration-none">Reviews</a>
+            </p>
+            <p class="fs-6">
+              <a href="#" class="footer_link text-decoration-none"
+                >Store Locations</a
+              >
+            </p>
+          </div>
+          <div class="col-lg-3">
+            <p class="fs-5"><strong>LINKS</strong></p>
+            <p class="fs-6">
+              <a href="#" class="footer_link text-decoration-none"
+                >PlayStation World Community</a
+              >
+            </p>
+            <p class="fs-6">
+              <a href="#" class="footer_link text-decoration-none"
+                >PlayStation World Shopee Store</a
+              >
+            </p>
+            <p class="fs-6">
+              <a href="#" class="footer_link text-decoration-none"
+                >PlayStation World Lazada Store</a
+              >
+            </p>
+          </div>
+          <div class="col-lg-3">
+            <p class="fs-5"><strong>Follow Us</strong></p>
+            <a href="#"
+              ><img
+                src="img/footer-logo/facebook-logo.png"
+                class="me-1 img-fluid footer_sm_logo"
+            /></a>
+            <a href="#"
+              ><img
+                src="img/footer-logo/instagram-logo.png"
+                class="me-1 img-fluid footer_sm_logo"
+            /></a>
+            <a href="#"
+              ><img
+                src="img/footer-logo/tiktok-logo.png"
+                class="me-1 img-fluid footer_sm_logo"
+            /></a>
+            <a href="#"
+              ><img
+                src="img/footer-logo/twitter-logo2.png"
+                class="me-1 img-fluid footer_sm_logo"
+            /></a>
+          </div>
+          <div class="row text-center mt-4">
+            <hr />
+            <p class="text-center mt-4">
+              © 2024 Dante Magbuhos Jr | djmagbuhos@gmail.com & Keith Aquino |
+              keithaquino@gmail.com
+            </p>
+            <p class="text-center mb-4"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

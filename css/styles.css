@@ -1,0 +1,112 @@
+/* NAV */
+#psw_topnav {
+  background-color: rgb(231, 234, 229);
+}
+#psw_topnav2 {
+  background-color: rgb(231, 234, 229);
+}
+
+.nav_text {
+  color: rgb(41, 41, 41);
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+}
+
+#psw_navbar .navbar-toggler-icon {
+  filter: invert(1) !important;
+}
+
+#search-bar {
+  border-color: black;
+  border-width: 1px 0px 1px 1px;
+  border-radius: 20px 0px 0px 20px;
+}
+
+#search-bar-2 {
+  border-color: black;
+  border-width: 1px 1px 1px 0px;
+  border-radius: 0px 20px 20px 0px;
+  background-color: rgb(228, 228, 228);
+}
+
+.nav_text:hover,
+.nav_link:hover {
+  color: rgb(155, 188, 251);
+}
+
+@font-face {
+  font-family: "theRave";
+  src: url("../font/PS.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "oldPS";
+  src: url("../font/PS_old.ttf") format("truetype");
+}
+
+#shop_now_dd:visited {
+  color: white;
+}
+
+#shop_now_dd:hover {
+  color: rgb(155, 188, 251);
+}
+
+.dd_shopnow {
+  font-family: "oldPS";
+  background-color: rgb(59, 59, 59);
+}
+
+.dd_shopnow1:hover {
+  background-color: rgb(216, 216, 216);
+}
+
+.li_dd:hover {
+  background-color: rgb(145, 145, 145);
+}
+
+#psw_navbar {
+  font-family: "theRave";
+  background-color: rgb(41, 41, 41);
+}
+
+.nav_link {
+  color: white;
+}
+
+/* Body */
+#content_body {
+  background-color: rgb(253, 245, 233);
+}
+
+.carousel .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+#imageCarousel .carousel-control-prev,
+#imageCarousel .carousel-control-next {
+  width: auto; /* Set width to auto */
+  font-size: 1rem; /* Adjust font size as needed */
+}
+
+.hot_arrow_button {
+  border-radius: 50%; /* Make buttons round */
+  background-color: rgb(95, 95, 95); /* Set background color to gray */
+}
+
+/* Footer */
+.footer_sm_logo {
+  width: 40px;
+}
+
+#footer-container {
+  background-color: rgb(41, 41, 41);
+  color: white;
+}
+
+.footer_link {
+  color: white;
+}
