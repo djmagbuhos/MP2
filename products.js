@@ -57,7 +57,7 @@ const products = [
   {
     item_id: 3,
     item_name: "PlayStation VR2",
-    genre: "VR",
+    genre: "Console",
     price: "₱34,790.00",
     image_card: "img/products/ps_vr_card.jpg",
     image_prod1: "img/products/ps_vr_prod1.jpg",
