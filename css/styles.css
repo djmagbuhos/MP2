@@ -76,6 +76,8 @@
 }
 
 /* Body */
+
+/* HOME */
 #content_body {
   background-color: rgb(253, 245, 233);
 }
@@ -95,6 +97,17 @@
 .hot_arrow_button {
   border-radius: 50%; /* Make buttons round */
   background-color: rgb(95, 95, 95); /* Set background color to gray */
+}
+
+/* SHOP */
+#prod_link {
+  text-decoration: none;
+}
+
+#shop_border {
+  border: 1px solid;
+  border-radius: 25px;
+  border-color: rgb(172, 172, 172);
 }
 
 /* Footer */

@@ -13,10 +13,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
+    <!-- will create separate jsfile trying first -->
+
     <link rel="stylesheet" href="css/styles.css" />
     <title>Playstation World</title>
   </head>
@@ -96,7 +94,9 @@
           >
             <ul class="navbar-nav w-100 nav-fill">
               <li class="nav-item">
-                <a class="nav-link nav_link" href="#"> <strong>Home</strong></a>
+                <a class="nav-link nav_link" href="index.html">
+                  <strong>Home</strong></a
+                >
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -110,7 +110,7 @@
                   <li>
                     <a
                       class="li_dd dropdown-item text-center text-light"
-                      href="#"
+                      href="shop_game.html"
                     >
                       GAMES</a
                     >
@@ -118,9 +118,9 @@
                   <li>
                     <a
                       class="li_dd dropdown-item text-center text-light"
-                      href="#"
+                      href="shop_ca.html"
                     >
-                      ACCESSORIES</a
+                      CONSOLE | ACCESSORIES</a
                     >
                   </li>
                 </ul>
@@ -154,7 +154,29 @@
     </nav>
 
     <!-- CONTENT -->
-    
+    <div class="container-fluid mt-5 mb-5">
+      <div class="container" id="shop_border">
+        <div class="row m-3">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-lg-3">
+              <select class="form-select" id="pcategories-dropdown">
+                <option value="select_genre" selected disabled>
+                  Select game genre...
+                </option>
+                <option value="action">Action</option>
+                <option value="rpg">RPG</option>
+              </select>
+            </div>
+            <div class="col-lg-9 text-end">
+              <strong>Games</strong> |
+              <a href="shop_ca.html" id="prod_link">Console & Accessories</a>
+            </div>
+          </div>
+          <hr class="my-3" />
+          <div class="row" id="card_game_display"></div>
+        </div>
+      </div>
+    </div>
     <!-- Footer -->
     <div class="container-fluid" id="footer-container">
       <br />
