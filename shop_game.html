@@ -16,6 +16,29 @@
     <!-- will create separate jsfile trying first -->
 
     <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      async function getData(data) {
+        let my_obj = await fetch(data);
+        let my_text = await my_obj.text();
+        let games = JSON.parse(my_text);
+
+        for (let i = 0; i < games.length; i++) {
+          let card =
+            '<div class="col-lg-3"><a href="games_site/games_ + games[i].item_id.html"><img src="' +
+            games[i].image_card +
+            '" class="img-fluid card-img-top card_img_prod" alt="' +
+            games[i].item_name +
+            '"/></a><div class="card-body"><hr /><a href="games_site/games_ + games[i].item_id.html"><h2 class="card_name">' +
+            games[i].item_name +
+            '</h2></a><p class="card_price">₱' +
+            games[i].price +
+            "</p></div></div>";
+          $("#games_display").append(card);
+        }
+      }
+
+      getData("http://localhost:3002/api/games");
+    </script>
     <title>Playstation World</title>
   </head>
   <body>
@@ -173,7 +196,7 @@
             </div>
           </div>
           <hr class="my-3" />
-          <div class="row" id="card_game_display"></div>
+          <div class="row" id="games_display"></div>
         </div>
       </div>
     </div>

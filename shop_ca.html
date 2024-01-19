@@ -13,9 +13,30 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
-    <!-- will create separate jsfile trying first -->
-
     <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      async function getData(data) {
+        let my_obj = await fetch(data);
+        let my_text = await my_obj.text();
+        let product = JSON.parse(my_text);
+
+        for (let i = 0; i < product.length; i++) {
+          let card =
+            '<div class="col-lg-3"><a href="product_site/product_ + product[i].item_id.html"><img src="' +
+            product[i].image_card +
+            '" class="img-fluid card-img-top card_img_prod" alt="' +
+            product[i].item_name +
+            '"/></a><div class="card-body"><hr /><a href="product_site/product_ + product[i].item_id.html"><h2 class="card_name">' +
+            product[i].item_name +
+            '</h2></a><p class="card_price">₱' +
+            product[i].price +
+            "</p></div></div>";
+          $("#products_display").append(card);
+        }
+      }
+
+      getData("http://localhost:3002/api/product");
+    </script>
     <title>Playstation World</title>
   </head>
   <body>
@@ -173,30 +194,7 @@
             </div>
           </div>
           <hr class="my-3" />
-          <div class="row" id="card_game_display">
-            <!-- id="card_game_display" => append here -->
-            <!-- Sample -->
-            <div class="col-lg-3">
-              <div class="card h-100 card-product">
-                <a href="product_site/product_ + product[i].item_id.html">
-                  <!-- product_0.html -->
-                  <!-- img src="image_card" -->
-                  <img
-                    src="img/products/access_card.webp"
-                    class="img-fluid card-img-top card_img_prod"
-                    alt="item_name"
-                  />
-                </a>
-                <div class="card-body">
-                  <hr />
-                  <a href="product_site/product_ + product[i].item_id.html"
-                    ><h2 class="card_name">Item_name</h2></a
-                  >
-                  <p class="card_price">₱9,9990.00</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="row" id="products_display"></div>
         </div>
       </div>
     </div>

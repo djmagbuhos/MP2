@@ -4,7 +4,7 @@ const games = [
     item_name: "God of War",
     platform: "PS4",
     genre: "Action",
-    price: "₱1199.99",
+    price: "1199.99",
     image_card: "img/games/god_of_war_card.webp",
     image_main: "img/games/god_of_war_main.webp",
     item_desc:
@@ -15,7 +15,7 @@ const games = [
     item_name: "Grand Theft Auto V",
     platform: "PS5",
     genre: "Action",
-    price: "₱399.99",
+    price: "399.99",
     image_card: "img/games/gta_v_card.webp",
     image_main: "img/games/gta_v_main.webp",
     item_desc:
@@ -26,7 +26,7 @@ const games = [
     item_name: "EA Sports FC 24",
     platform: "PS4, PS5",
     genre: "Sports",
-    price: "₱4299.99",
+    price: "4299.99",
     image_card: "img/games/fc_24_card.webp",
     image_main: "img/games/fc_24_main.webp",
     item_desc:
@@ -37,7 +37,7 @@ const games = [
     item_name: "Baldur's Gate 3",
     platform: "PS5",
     genre: "Role-Playing",
-    price: "₱4199.99",
+    price: "4199.99",
     image_card: "img/games/baldur_3_card.webp",
     image_main: "img/games/baldur_3_main.webp",
     item_desc:
@@ -48,7 +48,7 @@ const games = [
     item_name: "Marvel's Spider-Man 2",
     platform: "PS5",
     genre: "Action",
-    price: "₱4399.99",
+    price: "4399.99",
     image_card: "img/games/spiderman_2_card.webp",
     image_main: "img/games/spiderman_2_main.webp",
     item_desc:
@@ -59,7 +59,7 @@ const games = [
     item_name: "The Last of Us Part I",
     platform: "PS5",
     genre: "Action",
-    price: "₱4399.99",
+    price: "4399.99",
     image_card: "img/games/TLOU_1_card.webp",
     image_main: "img/games/TLOU_1_main.webp",
     item_desc:
@@ -70,7 +70,7 @@ const games = [
     item_name: "Cyberpunk 2077",
     platform: "PS5",
     genre: "Role-playing",
-    price: "₱3499.99",
+    price: "3499.99",
     image_card: "img/games/cyberpunk_card.webp",
     image_main: "img/games/cyberpunk_main.webp",
     item_desc:
@@ -81,7 +81,7 @@ const games = [
     item_name: "Red Dead Redemption 2",
     platform: "PS4",
     genre: "Action-adventure",
-    price: "₱5299.99",
+    price: "5299.99",
     image_card: "img/games/red_dead_2_card.webp",
     image_main: "img/games/red_dead_2_main.webp",
     item_desc:
@@ -92,7 +92,7 @@ const games = [
     item_name: "Sekiro: Shadows Die Twice",
     platform: "PS4",
     genre: "Adventure",
-    price: "₱3499.99",
+    price: "3499.99",
     image_card: "img/games/sekiro_card.webp",
     image_main: "img/games/sekiro_main.webp",
     item_desc:
@@ -103,7 +103,7 @@ const games = [
     item_name: "Fallout 4",
     platform: "PS4",
     genre: "Role-playing",
-    price: "₱1299.99",
+    price: "1299.99",
     image_card: "img/games/fallout_4_card.jpg",
     image_main: "img/games/fallout_4_main.webp",
     item_desc:
@@ -114,7 +114,7 @@ const games = [
     item_name: "Ghost of Tsushima",
     platform: "PS4, PS5",
     genre: "Role-playing",
-    price: "₱2299.99",
+    price: "2299.99",
     image_card: "img/games/tsushima_card.webp",
     image_main: "img/games/tsushima_main.webp",
     item_desc:
@@ -125,7 +125,7 @@ const games = [
     item_name: "DOOM Eternal",
     platform: "PS4, PS5",
     genre: "Shooter",
-    price: "₱1299.99",
+    price: "1299.99",
     image_card: "img/games/doom_eternal_card.webp",
     image_main: "img/games/doom_eternal_main.webp",
     item_desc:
@@ -136,7 +136,7 @@ const games = [
     item_name: "Minecraft",
     platform: "PS4",
     genre: "Adventure",
-    price: "₱1799.99",
+    price: "1799.99",
     image_card: "img/games/minecraft_card.jpg",
     image_main: "img/games/minecraft_main.webp",
     item_desc:
@@ -147,7 +147,7 @@ const games = [
     item_name: "STAR WARS Jedi: Survivor",
     platform: "PS5",
     genre: "Action",
-    price: "₱5699.99",
+    price: "5699.99",
     image_card: "img/games/jedi_survivor_card.webp",
     image_main: "img/games/jedi_survivor_main.webp",
     item_desc:
@@ -158,7 +158,7 @@ const games = [
     item_name: "Hades",
     platform: "PS4, PS5",
     genre: "Action",
-    price: "₱1499.99",
+    price: "1499.99",
     image_card: "img/games/hades_card.webp",
     image_main: "img/games/hades_main.webp",
     item_desc:
@@ -169,7 +169,7 @@ const games = [
     item_name: "NieR:Replicant",
     platform: "PS4",
     genre: "Role-playing",
-    price: "₱899.99",
+    price: "899.99",
     image_card: "img/games/nier_card.webp",
     image_main: "img/games/nier_main.webp",
     item_desc:
@@ -180,7 +180,7 @@ const games = [
     item_name: "Devil May Cry 5",
     platform: "PS5",
     genre: "Action",
-    price: "₱1799.99",
+    price: "1799.99",
     image_card: "img/games/dmc_5_card.webp",
     image_main: "img/games/dmc_5_main.jpg",
     item_desc:
@@ -191,7 +191,7 @@ const games = [
     item_name: "Gran Turismo 7",
     platform: "PS4, PS5",
     genre: "Racing",
-    price: "₱2999.99",
+    price: "2999.99",
     image_card: "img/games/gran_turismo_card.webp",
     image_main: "img/games/gran_turismo_main.webp",
     item_desc:
@@ -202,7 +202,7 @@ const games = [
     item_name: "NBA 2K24",
     platform: "PS5",
     genre: "Sports",
-    price: "₱3499.99",
+    price: "3499.99",
     image_card: "img/games/nba_2k24_card.webp",
     image_main: "img/games/nba_2k24_main.webp",
     item_desc:
@@ -213,7 +213,7 @@ const games = [
     item_name: "Hogwarts Legacy",
     platform: "PS4, PS5",
     genre: "Adventure",
-    price: "₱3499.99",
+    price: "3499.99",
     image_card: "img/games/hogwarts_card.webp",
     image_main: "img/games/hogwarts_main.webp",
     item_desc:
@@ -224,7 +224,7 @@ const games = [
     item_name: "Call of Duty: Modern Warfare II",
     platform: "PS4, PS5",
     genre: "Action",
-    price: "₱4099.99",
+    price: "4099.99",
     image_card: "img/games/cod_mwII_card.webp",
     image_main: "img/games/cod_mwII_main.webp",
     item_desc:
@@ -235,7 +235,7 @@ const games = [
     item_name: "Alan Wake 2",
     platform: "PS5",
     genre: "Horror",
-    price: "₱3499.99",
+    price: "3499.99",
     image_card: "img/games/alan_wake_2_card.jpg",
     image_main: "img/games/alan_wake_2_main.webp",
     item_desc:
@@ -246,7 +246,7 @@ const games = [
     item_name: "NHL 24",
     platform: "PS4, PS5",
     genre: "Sports",
-    price: "₱4099.99",
+    price: "4099.99",
     image_card: "img/games/nhl_24_card.webp",
     image_main: "img/games/nhl_24_main.webp",
     item_desc:
@@ -257,7 +257,7 @@ const games = [
     item_name: "Street Fighter 6",
     platform: "PS4, PS5",
     genre: "Fighting",
-    price: "₱3499.99",
+    price: "3499.99",
     image_card: "img/games/sf_6_card.webp",
     image_main: "img/games/sf_6_main.webp",
     item_desc:
@@ -268,7 +268,7 @@ const games = [
     item_name: "UFC 5",
     platform: "PS5",
     genre: "Fighting",
-    price: "₱2899.99",
+    price: "2899.99",
     image_card: "img/games/ufc_5_card.webp",
     image_main: "img/games/ufc_5_main.webp",
     item_desc:
@@ -279,7 +279,7 @@ const games = [
     item_name: "Tekken 8",
     platform: "PS5",
     genre: "Fighting",
-    price: "₱4099.99",
+    price: "4099.99",
     image_card: "img/games/tekken_8_card.webp",
     image_main: "img/games/tekken_8_main.webp",
     item_desc:
@@ -290,7 +290,7 @@ const games = [
     item_name: "Bloodborne",
     platform: "PS4",
     genre: "Role-playing",
-    price: "₱1299.99",
+    price: "1299.99",
     image_card: "img/games/bloodborne_card.webp",
     image_main: "img/games/bloodborne_main.jpg",
     item_desc:
@@ -301,7 +301,7 @@ const games = [
     item_name: "Stray",
     platform: "PS4, PS5",
     genre: "Adventure",
-    price: "₱1799.99",
+    price: "1799.99",
     image_card: "img/games/stray_card.webp",
     image_main: "img/games/stray_main.webp",
     item_desc:
@@ -312,7 +312,7 @@ const games = [
     item_name: "Saints Row",
     platform: "PS4, PS5",
     genre: "Shooter",
-    price: "₱1799.99",
+    price: "1799.99",
     image_card: "img/games/saints_row_card.webp",
     image_main: "img/games/saints_row_main.webp",
     item_desc:
@@ -323,7 +323,7 @@ const games = [
     item_name: "VALKYRIE ELYSIUM",
     platform: "PS4, PS5",
     genre: "Role-playing",
-    price: "₱3499.99",
+    price: "3499.99",
     image_card: "img/games/valkyrie_card.webp",
     image_main: "img/games/valkyrie_main.webp",
     item_desc:
@@ -334,7 +334,7 @@ const games = [
     item_name: "OlliOlli World",
     platform: "PS4, PS5",
     genre: "Arcade",
-    price: "₱1799.99",
+    price: "1799.99",
     image_card: "img/games/olli_olli_card.jpg",
     image_main: "img/games/olli_olli_main.webp",
     item_desc:
@@ -345,7 +345,7 @@ const games = [
     item_name: "Blood & Truth",
     platform: "PS4",
     genre: "VR",
-    price: "₱1599.99",
+    price: "1599.99",
     image_card: "img/games/blood_truth_card.webp",
     image_main: "img/games/blood_truth_main.webp",
     item_desc:
@@ -356,7 +356,7 @@ const games = [
     item_name: "Astro Bot Rescue Mission",
     platform: "PS4",
     genre: "VR",
-    price: "₱999.99",
+    price: "999.99",
     image_card: "img/games/astro_bot_card.webp",
     image_main: "img/games/astro_bot_main.webp",
     item_desc:
@@ -367,7 +367,7 @@ const games = [
     item_name: "Taxi Life",
     platform: "PS5",
     genre: "Simulation",
-    price: "₱2399.99",
+    price: "2399.99",
     image_card: "img/games/taxi_life_card.jpg",
     image_main: "img/games/taxi_life_main.webp",
     item_desc:
@@ -378,7 +378,7 @@ const games = [
     item_name: "Dead Island 2",
     platform: "PS4, PS5",
     genre: "Action",
-    price: "₱3499.99",
+    price: "3499.99",
     image_card: "img/games/dead_island_2_card.webp",
     image_main: "img/games/dead_island_2_main.webp",
     item_desc:
