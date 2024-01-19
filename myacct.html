@@ -252,7 +252,13 @@
                 <label class="form-label" for="r_number">Mobile Number</label>
                 <div class="input-group mb-4">
                   <span class="input-group-text">+63</span>
-                  <input type="number" id="r_number" class="form-control" />
+                  <input
+                    type="text"
+                    id="r_number"
+                    class="form-control"
+                    minlength="10"
+                    maxlength="10"
+                  />
                 </div>
                 <input type="submit" class="btn btn-success" />
               </form>
