@@ -22,7 +22,7 @@
 
         for (let i = 0; i < product.length; i++) {
           let card =
-            '<div class="col-lg-3"><a href="product_site/product_ + product[i].item_id.html"><img src="' +
+            '<div class="col-lg-3 my-2"><div class="card card-products h-100"><a href="product_site/product_ + product[i].item_id.html"><img src="' +
             product[i].image_card +
             '" class="img-fluid card-img-top card_img_prod" alt="' +
             product[i].item_name +
@@ -30,7 +30,7 @@
             product[i].item_name +
             '</h2></a><p class="card_price">₱' +
             product[i].price +
-            "</p></div></div>";
+            "</p></div></div></div>";
           $("#products_display").append(card);
         }
       }

@@ -24,7 +24,7 @@
 
         for (let i = 0; i < games.length; i++) {
           let card =
-            '<div class="col-lg-3"><a href="games_site/games_ + games[i].item_id.html"><img src="' +
+            '<div class="col-lg-3 my-2"><div class="card card-products h-100"><a href="games_site/games_ + games[i].item_id.html"><img src="' +
             games[i].image_card +
             '" class="img-fluid card-img-top card_img_prod" alt="' +
             games[i].item_name +
@@ -32,7 +32,7 @@
             games[i].item_name +
             '</h2></a><p class="card_price">₱' +
             games[i].price +
-            "</p></div></div>";
+            "</p></div></div></div>";
           $("#games_display").append(card);
         }
       }
