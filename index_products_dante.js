@@ -16,7 +16,7 @@ app.get("/api/address", (req, res) => {
 app.get("/api/address/:id", (req, res) => {
   let address = false;
   for (let i = 0; i < a.length; i++) {
-    if (a[i].id == Number(req.params.id)) {
+    if (a[i].address_id == Number(req.params.id)) {
       address = a[i];
       break;
     }
@@ -62,56 +62,64 @@ app.put("/api/address", (req, res) => {
   res.send(new_address);
 });
 
-// app.put("/api/pets/:id", (req, res) => {
-//   let pet = false;
-//   for (let i = 0; i < p.length; i++) {
-//     if (p[i].id == Number(req.params.id)) {
-//       pet = p[i];
-//       break;
-//     }
-//   }
+app.put("/api/address/:id", (req, res) => {
+  let address = false;
+  for (let i = 0; i < a.length; i++) {
+    if (a[i].address_id == Number(req.params.id)) {
+      address = a[i];
+      break;
+    }
+  }
 
-//   if (pet) {
-//     if (req.body.species) {
-//       pet.species = req.body.species;
-//     }
-//     if (req.body.eating_habit) {
-//       pet.eating_habit = req.body.eating_habit;
-//     }
-//     if (req.body.pet_name) {
-//       pet.pet_name = req.body.pet_name;
-//     }
-//     console.log(pet);
-//     res.send(pet);
-//   } else {
-//     let err = "Pet not found!";
-//     res.status(404);
-//     console.log(err);
-//     res.send(err);
-//   }
-// });
+  if (address) {
+    if (req.body.city) {
+      address.city = req.body.city;
+    }
+    if (req.body.barangay) {
+      address.barangay = req.body.barangay;
+    }
+    if (req.body.street) {
+      address.street = req.body.street;
+    }
+    if (req.body.rec_name) {
+      address.rec_name = req.body.rec_name;
+    }
+    if (req.body.rec_mnumber) {
+      address.rec_mnumber = req.body.rec_mnumber;
+    }
+    console.log(address);
+    res.send(address);
+  } else {
+    let err = "Address not found!";
+    res.status(404);
+    console.log(err);
+    res.send(err);
+  }
+});
 
-// app.delete("/api/pets/:id", (req, res) => {
-//   let pet = false;
-//   for (let i = 0; i < p.length; i++) {
-//     if (p[i].id == Number(req.params.id)) {
-//       pet = p[i];
-//       break;
-//     }
-//   }
+app.delete("/api/address/:id", (req, res) => {
+  let address = false;
+  for (let i = 0; i < a.length; i++) {
+    if (a[i].address_id == Number(req.params.id)) {
+      address = a[i];
+      break;
+    }
+  }
 
-//   if (pet) {
-//     let index = p.indexOf(pet);
-//     console.log(pet);
-//     p[index] = {};
-//     res.send(pet);
-//   } else {
-//     let err = "Pet not found!";
-//     res.status(404);
-//     console.log(err);
-//     res.send(err);
-//   }
-// });
+  if (address) {
+    let index = a.indexOf(address);
+    console.log(address);
+    // a[index] = {};
+    a.splice(index, 1);
+    console.log("Deleted address_id: " + address.address_id);
+    res.send(address);
+  } else {
+    let err = "Address not found!";
+    res.status(404);
+    console.log(err);
+    res.send(err);
+  }
+});
 
 let port = 3001;
 app.listen(port);
