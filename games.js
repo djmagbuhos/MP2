@@ -105,7 +105,7 @@ const games = [
     genre: "Role-playing",
     price: "1299.99",
     image_card: "img/games/fallout_4_card.webp",
-    image_main: "img/games/fallout_4_main.webp",
+    image_main: "img/games/fallout_4_main2.jpg",
     item_desc:
       "Bethesda Game Studios, the award-winning creators of Fallout 3 and Skyrim, welcomes you to the world of Fallout 4 . Winner of more than 50 Game of the Year awards, including top honors at the 2016 D.I.C.E. Awards. Fallout 4 is the studio's most ambitious game ever and the next generation of open-world gaming. As the sole survivor of Vault 111, you enter a world destroyed by nuclear war. Only you can rebuild and determine the fate of the Wasteland. Welcome home.",
   },
@@ -127,7 +127,7 @@ const games = [
     genre: "Shooter",
     price: "1299.99",
     image_card: "img/games/doom_eternal_card.webp",
-    image_main: "img/games/doom_eternal_main.webp",
+    image_main: "img/games/doom_eternal_main.jpg",
     item_desc:
       "Hell's armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear... is you. Experience the ultimate combination of speed and power in DOOM Eternal - the next leap in push-forward, first-person combat.",
   },
@@ -237,7 +237,7 @@ const games = [
     genre: "Horror",
     price: "3499.99",
     image_card: "img/games/alan_wake_2_card.webp",
-    image_main: "img/games/alan_wake_2_main.webp",
+    image_main: "img/games/alan_wake_2_main.jpg",
     item_desc:
       "Saga Anderson is a gifted FBI agent called to the small Pacific Northwest town of Bright Falls to investigate a series of ritualistic murders. Alan Wake is a writer who has spent years trapped in the Dark Place, a terrifying alternate reality that can be reshaped by his words. Although they have never met, the two are connected across separate realities, their actions able to change their respective worlds. When the events depicted in a horror story cause Bright Falls to become engulfed in a corrupting, supernatural darkness, both Anderson and Wake must use the power of light to survive and to protect the ones they love. In a reality-bending world of victims and monsters, can they become the heroes of this story?",
   },
@@ -309,14 +309,14 @@ const games = [
   },
   {
     item_id: 28,
-    item_name: "Saints Row",
+    item_name: "It Takes Two",
     platform: "PS4, PS5",
-    genre: "Shooter",
+    genre: "Adventure",
     price: "1799.99",
-    image_card: "img/games/saints_row_card.webp",
-    image_main: "img/games/saints_row_main.webp",
+    image_card: "img/games/it_takes_2_card.webp",
+    image_main: "img/games/it_takes_2_main.webp",
     item_desc:
-      "Play through an original action blockbuster story full of criminality, extraordinary scenes and signature surprises laced with humour. As the future Boss, with Neenah, Kevin and Eli by your side, you'll form The Saints and take on Los Panteros, The Idols and Marshall as you build your empire across the streets of Santo Ileso and battle for control of the city. Ultimately Saints Row is the story of a start-up company, it's just that the business The Saints are in happens to be crime.",
+      "Embark on the craziest journey of your life in It Takes Two, a genre-bending platform adventure created purely for co-op. Invite a friend to join for free with Friend’s Pass*1 and work together across a huge variety of gleefully disruptive gameplay challenges. Play as the clashing couple Cody and May, two humans turned into dolls by a magic spell. Together, trapped in a fantastical world where the unpredictable hides around every corner, they are reluctantly challenged with saving their fractured relationship.",
   },
   {
     item_id: 29,
@@ -369,9 +369,9 @@ const games = [
     genre: "Adventure",
     price: "4199.99",
     image_card: "img/games/avatar_card.webp",
-    image_main: "img/games/taxi_life_main.webp",
+    image_main: "img/games/avatar_main.webp",
     item_desc:
-      "Avatar: Frontiers of Pandora™ is a first-person, action-adventure game set in the open world of the never-before-seen Western Frontier of Pandora. Abducted by the human militaristic corporation known as the RDA, you, a Navi, were trained and moulded to serve their purpose. Fifteen years later, you are free, but find yourself a stranger in your birthplace. Reconnect with your lost heritage, discover what it truly means to be Na'vi, and join other clans to protect Pandora from the RDA. ",
+      "Avatar: Frontiers of Pandora™ is a first-person, action-adventure game set in the open world of the never-before-seen Western Frontier of Pandora. Abducted by the human militaristic corporation known as the RDA, you, a Navi, were trained and moulded to serve their purpose. Fifteen years later, you are free, but find yourself a stranger in your birthplace. Reconnect with your lost heritage, discover what it truly means to be Na'vi, and join other clans to protect Pandora from the RDA.",
   },
   {
     item_id: 34,
