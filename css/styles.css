@@ -116,6 +116,19 @@
   border-color: rgb(172, 172, 172);
 }
 
+.card_name {
+  text-decoration: none;
+}
+
+.card_img_prod {
+  width: 200px;
+  object-fit: cover; /* Ensure the image covers the specified height without distorting its aspect ratio */
+}
+
+.add-cart {
+  background-color: rgb(110, 110, 110);
+}
+
 /* My Acct */
 
 #dp_myacct {
