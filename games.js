@@ -82,7 +82,7 @@ const games = [
     platform: "PS4",
     genre: "Action-adventure",
     price: "5299.99",
-    image_card: "img/games/red_dead_2_card.webp",
+    image_card: "img/games/red_dead_2_card.jpg",
     image_main: "img/games/red_dead_2_main.webp",
     item_desc:
       "America, 1899. The end of the wild west era has begun as lawmen hunt down the last remaining outlaw gangs. Those who will not surrender or succumb are killed. After a robbery goes badly wrong in the western town of Blackwater, Arthur Morgan and the Van der Linde gang are forced to flee. With federal agents and the best bounty hunters in the nation massing on their heels, the gang must rob, steal and fight their way across the rugged heartland of America in order to survive.",
@@ -93,7 +93,7 @@ const games = [
     platform: "PS4",
     genre: "Adventure",
     price: "3499.99",
-    image_card: "img/games/sekiro_card.webp",
+    image_card: "img/games/sekiro_card.jpg",
     image_main: "img/games/sekiro_main.webp",
     item_desc:
       "In Sekiro: Shadows Die Twice you are the 'one-armed wolf', a disgraced and disfigured warrior rescued from the brink of death. Bound to protect a young lord who is the descendant of an ancient bloodline, you become the target of many vicious enemies, including the dangerous Ashina clan. When the young lord is captured, nothing will stop you on a perilous quest to regain your honor, not even death itself. Explore late 1500s Sengoku Japan, a brutal period of constant life and death conflict, as you come face to face with larger than life foes in a dark and twisted world. Unleash an arsenal of deadly prosthetic tools and powerful ninja abilities while you blend stealth, vertical traversal, and visceral head to head combat in a bloody confrontation.",
@@ -104,7 +104,7 @@ const games = [
     platform: "PS4",
     genre: "Role-playing",
     price: "1299.99",
-    image_card: "img/games/fallout_4_card.jpg",
+    image_card: "img/games/fallout_4_card.webp",
     image_main: "img/games/fallout_4_main.webp",
     item_desc:
       "Bethesda Game Studios, the award-winning creators of Fallout 3 and Skyrim, welcomes you to the world of Fallout 4 . Winner of more than 50 Game of the Year awards, including top honors at the 2016 D.I.C.E. Awards. Fallout 4 is the studio's most ambitious game ever and the next generation of open-world gaming. As the sole survivor of Vault 111, you enter a world destroyed by nuclear war. Only you can rebuild and determine the fate of the Wasteland. Welcome home.",
@@ -115,7 +115,7 @@ const games = [
     platform: "PS4, PS5",
     genre: "Role-playing",
     price: "2299.99",
-    image_card: "img/games/tsushima_card.webp",
+    image_card: "img/games/tsushima_card.jpg",
     image_main: "img/games/tsushima_main.webp",
     item_desc:
       "Uncover the hidden wonders of Tsushima in this open-world action adventure from Sucker Punch Productions and PlayStation Studios, available for PS5 and PS4. Forge a new path and wage an unconventional war for the freedom of Tsushima. Challenge opponents with your katana, master the bow to eliminate distant threats, develop stealth tactics to ambush enemies and explore a new story on Iki Island.",
@@ -137,7 +137,7 @@ const games = [
     platform: "PS4",
     genre: "Adventure",
     price: "1799.99",
-    image_card: "img/games/minecraft_card.jpg",
+    image_card: "img/games/minecraft_card.webp",
     image_main: "img/games/minecraft_main.webp",
     item_desc:
       "In Minecraft, your adventure starts with your imagination. Build anything you can imagine with unlimited resources in Creative mode, or go on grand expeditions in Survival, journeying across mysterious lands and into the depths of your own infinite worlds. Will you hide from monsters or craft tools, armour and weapons to fight back? No need to go alone!",
@@ -181,7 +181,7 @@ const games = [
     platform: "PS5",
     genre: "Action",
     price: "1799.99",
-    image_card: "img/games/dmc_5_card.webp",
+    image_card: "img/games/dmc_5_card.jpg",
     image_main: "img/games/dmc_5_main.jpg",
     item_desc:
       "A brand new entry in the legendary action series, Devil May Cry 5 brings together its signature blend of high-octane action and otherworldly original characters with the latest Capcom gaming technology to deliver a graphically groundbreaking action-adventure masterpiece.",
@@ -225,7 +225,7 @@ const games = [
     platform: "PS4, PS5",
     genre: "Action",
     price: "4099.99",
-    image_card: "img/games/cod_mwII_card.webp",
+    image_card: "img/games/cod_mwII_card.jpg",
     image_main: "img/games/cod_mwII_main.webp",
     item_desc:
       "Leverage new weapons, vehicles, and cutting-edge equipment to take on enemies. Gear up and take the fight offshore to siege enemies underwater, breach a highly fortified enemy base, infil along the canals and liberate much-needed allies at a black site hidden within the mountains. Infinity Ward presents heart-pounding next-gen, state-of-the-art gameplay. Fight alongside friends in a truly immersive experience with stunningly realistic sound, lighting, and graphics that produce the most advanced Call of Duty in history.",
@@ -236,7 +236,7 @@ const games = [
     platform: "PS5",
     genre: "Horror",
     price: "3499.99",
-    image_card: "img/games/alan_wake_2_card.jpg",
+    image_card: "img/games/alan_wake_2_card.webp",
     image_main: "img/games/alan_wake_2_main.webp",
     item_desc:
       "Saga Anderson is a gifted FBI agent called to the small Pacific Northwest town of Bright Falls to investigate a series of ritualistic murders. Alan Wake is a writer who has spent years trapped in the Dark Place, a terrifying alternate reality that can be reshaped by his words. Although they have never met, the two are connected across separate realities, their actions able to change their respective worlds. When the events depicted in a horror story cause Bright Falls to become engulfed in a corrupting, supernatural darkness, both Anderson and Wake must use the power of light to survive and to protect the ones they love. In a reality-bending world of victims and monsters, can they become the heroes of this story?",
@@ -258,7 +258,7 @@ const games = [
     platform: "PS4, PS5",
     genre: "Fighting",
     price: "3499.99",
-    image_card: "img/games/sf_6_card.webp",
+    image_card: "img/games/sf_6_card.jpg",
     image_main: "img/games/sf_6_main.webp",
     item_desc:
       "Street Fighter 6 is the next evolution of the Street Fighter series, and features innovative new gameplay features, plus enhanced visuals for every aspect of the game. Powered by Capcom's proprietary RE ENGINE, the Street Fighter 6 experience spans across three distinct game modes - Fighting Ground, World Tour and Battle Hub.",
@@ -291,7 +291,7 @@ const games = [
     platform: "PS4",
     genre: "Role-playing",
     price: "1299.99",
-    image_card: "img/games/bloodborne_card.webp",
+    image_card: "img/games/bloodborne_card.jpg",
     image_main: "img/games/bloodborne_main.jpg",
     item_desc:
       "Hunt your nightmares, lone traveler. A cursed town. A deadly mystery that swallows everything it touches. Face your fears as you enter the decaying city of Yharnam, a forsaken place ravaged by a terrible, all-consuming illness. Scour its darkest shadows, fight for your life with blades and guns and discover secrets that will make your blood run cold but just might save your skin...",
@@ -335,7 +335,7 @@ const games = [
     platform: "PS4, PS5",
     genre: "Arcade",
     price: "1799.99",
-    image_card: "img/games/olli_olli_card.jpg",
+    image_card: "img/games/olli_olli_card.webp",
     image_main: "img/games/olli_olli_main.webp",
     item_desc:
       "OlliOlli World is a bold new skateboarding action-platformer that's bursting with personality. Traverse a delightful and weird world as you take on missions, challenges and make new friends along the way. Experience the accessibility, depth and player freedom as you dive into the signature flow state gameplay of OlliOlli World.",
@@ -346,7 +346,7 @@ const games = [
     platform: "PS4",
     genre: "VR",
     price: "1599.99",
-    image_card: "img/games/blood_truth_card.webp",
+    image_card: "img/games/blood_truth_card.jpg",
     image_main: "img/games/blood_truth_main.webp",
     item_desc:
       "Enter London's lethal melting pot of high-end glamour and gritty underworld crime. Fight for your family's lives. Put on your PlayStation VR headset and become elite Special Forces soldier Ryan Marks in a hard-hitting shooter with all the explosive action and drama of a Hollywood blockbuster inspired by PlayStation VR Worlds' massively popular The London Heist experience.",
@@ -364,14 +364,14 @@ const games = [
   },
   {
     item_id: 33,
-    item_name: "Taxi Life",
+    item_name: "Avatar: Frontiers of Pandora",
     platform: "PS5",
-    genre: "Simulation",
-    price: "2399.99",
-    image_card: "img/games/taxi_life_card.jpg",
+    genre: "Adventure",
+    price: "4199.99",
+    image_card: "img/games/avatar_card.webp",
     image_main: "img/games/taxi_life_main.webp",
     item_desc:
-      "Climb into the driver's seat of your car and your business, transport passengers across Barcelona and grow your company! After arriving in Barcelona with nothing but a car and a dream, drive around the busy streets of the famous city and transport passengers while offering them impeccable service. You will need to follow the rules of the road; deal with impatient passengers and rush hours; adapt your routes to avoid traffic jams and accidents; and, most of all, ensure your clients are pleased with your service to earn the best ratings and the most generous tips!",
+      "Avatar: Frontiers of Pandora™ is a first-person, action-adventure game set in the open world of the never-before-seen Western Frontier of Pandora. Abducted by the human militaristic corporation known as the RDA, you, a Navi, were trained and moulded to serve their purpose. Fifteen years later, you are free, but find yourself a stranger in your birthplace. Reconnect with your lost heritage, discover what it truly means to be Na'vi, and join other clans to protect Pandora from the RDA. ",
   },
   {
     item_id: 34,

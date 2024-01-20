@@ -121,8 +121,23 @@
 }
 
 .card_img_prod {
-  width: 200px;
-  object-fit: cover; /* Ensure the image covers the specified height without distorting its aspect ratio */
+  object-fit: cover;
+}
+
+.card_img_prod:hover {
+  filter: brightness(0.7);
+}
+
+.card_name {
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgb(95, 150, 253);
+}
+
+.card_name:hover {
+  filter: brightness(0.7);
 }
 
 .add-cart {

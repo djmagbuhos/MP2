@@ -26,9 +26,13 @@
             product[i].image_card +
             '" class="img-fluid card-img-top card_img_prod" alt="' +
             product[i].item_name +
-            '"/></a><div class="card-body"><hr /><a href="product_site/product_ + product[i].item_id.html"><h2 class="card_name">' +
+            '"/></a><div class="card-body"><hr /><a class="card_name" href="product_site/product_' +
+            product[i].item_id.html +
+            '"><h4 class="card_name" title="' +
             product[i].item_name +
-            '</h2></a><p class="card_price">₱' +
+            '">' +
+            product[i].item_name +
+            '</h4></a><p class="card_price fs-5">₱' +
             product[i].price +
             "</p></div></div></div>";
           $("#products_display").append(card);
