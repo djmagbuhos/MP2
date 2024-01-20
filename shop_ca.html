@@ -34,7 +34,9 @@
             product[i].item_name +
             '</h4></a><p class="card_price fs-5">₱' +
             product[i].price +
-            "</p></div></div></div>";
+            "</p><div><button class='btn add_cart_bt text-light w-100' id='add_cart" +
+            product[i].item_id +
+            "'>Add to cart</button></div></div></div></div>";
           $("#products_display").append(card);
         }
       }

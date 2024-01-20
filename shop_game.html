@@ -24,11 +24,11 @@
 
         for (let i = 0; i < games.length; i++) {
           let card =
-            '<div class="col-lg-3 my-2"><div class="card card-products h-100"><a href="product_site/product_ + product[i].item_id.html"><img src="' +
+            '<div class="col-lg-3 my-2"><div class="card card-products h-100"><a href="product_site/games + product[i].item_id.html"><img src="' +
             games[i].image_card +
             '" class="img-fluid card-img-top card_img_prod" alt="' +
             games[i].item_name +
-            '"/></a><div class="card-body"><hr /><a class="card_name" href="product_site/product_' +
+            '"/></a><div class="card-body"><hr /><a class="card_name" href="product_site/games_' +
             games[i].item_id.html +
             '"><h4 class="card_name" title="' +
             games[i].item_name +
@@ -36,7 +36,9 @@
             games[i].item_name +
             '</h4></a><p class="card_price fs-5">₱' +
             games[i].price +
-            "</p></div></div></div>";
+            "</p><div><button class='btn add_cart_bt text-light w-100' id='add_cart" +
+            games[i].item_id +
+            "'>Add to cart</button></div></div></div></div>";
           $("#games_display").append(card);
         }
       }

@@ -144,6 +144,14 @@
   background-color: rgb(110, 110, 110);
 }
 
+.add_cart_bt {
+  background-color: rgb(0, 112, 209);
+}
+
+.add_cart_bt:hover {
+  background-color: rgb(110, 110, 110);
+}
+
 /* My Acct */
 
 #dp_myacct {
