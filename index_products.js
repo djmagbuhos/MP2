@@ -38,4 +38,4 @@ app.get("/api/games/:id", (req, res) => {
   }
 });
 
-app.listen(3002);
+app.listen(3001);

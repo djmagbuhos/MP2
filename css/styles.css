@@ -150,9 +150,16 @@
   width: 50px;
 }
 
-#cod_tab {
-  color: ;
+.form-select option {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
+
+/* #cod_tab {
+  color: ;
+} */
 /* Footer */
 .footer_sm_logo {
   width: 40px;
