@@ -20,29 +20,45 @@
       async function getData(data) {
         let my_obj = await fetch(data);
         let my_text = await my_obj.text();
-        let games = JSON.parse(my_text);
+        let product = JSON.parse(my_text);
 
-        for (let i = 0; i < games.length; i++) {
-          let card =
-            '<div class="col-lg-3 my-2"><div class="card card-products h-100"><a href="product_site/games_' +
-            games[i].item_id +
-            '.html"><img src="' +
-            games[i].image_card +
-            '" class="img-fluid card-img-top card_img_prod" alt="' +
-            games[i].item_name +
-            '"/></a><div class="card-body"><hr /><a class="card_name" href="product_site/games_' +
-            games[i].item_id +
-            '.html"><h4 class="card_name" title="' +
-            games[i].item_name +
-            '">' +
-            games[i].item_name +
-            '</h4></a><p class="card_price fs-5">₱' +
-            games[i].price +
-            "</p><div><button class='btn add_cart_bt text-light w-100' id='add_cart" +
-            games[i].item_id +
-            "'>Add to cart</button></div></div></div></div>";
-          $("#games_display").append(card);
+        function generateProductCard(item) {
+          return `<div class="col-lg-3 my-2">
+                <div class="card card-products h-100">
+                  <a href="product_site/product_${item.item_id}.html">
+                    <img src="${item.image_card}" class="img-fluid card-img-top card_img_prod" alt="${item.item_name}"/>
+                  </a>
+                  <div class="card-body">
+                    <hr />
+                    <a class="card_name" href="product_site/product_${item.item_id}.html">
+                      <h4 class="card_name" title="${item.item_name}">${item.item_name}</h4>
+                    </a>
+                    <p class="card_price fs-5">₱${item.price}</p>
+                    <div>
+                      <button class='btn add_cart_bt text-light w-100' id='add_cart${item.item_id}'>Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>`;
         }
+
+        function displayProducts(filteredProducts) {
+          $("#games_display").empty(); // Clear existing content
+          filteredProducts.forEach((item) => {
+            $("#games_display").append(generateProductCard(item));
+          });
+        }
+
+        $("#gcategories-dropdown").change(function () {
+          const selectedCategory = $(this).val();
+          const filteredProducts = product.filter(
+            (item) =>
+              selectedCategory === "all" || item.genre === selectedCategory
+          );
+          displayProducts(filteredProducts);
+        });
+
+        displayProducts(product);
       }
 
       getData("http://localhost:3001/api/games");
@@ -190,12 +206,21 @@
         <div class="row m-3">
           <div class="row align-items-center justify-content-between">
             <div class="col-lg-3">
-              <select class="form-select" id="pcategories-dropdown">
+              <select class="form-select" id="gcategories-dropdown">
                 <option value="select_genre" selected disabled>
                   Select game genre...
                 </option>
+                <option value="all">All</option>
                 <option value="action">Action</option>
-                <option value="rpg">RPG</option>
+                <option value="adventure">Adventure</option>
+                <option value="role-playing">Role-playing</option>
+                <option value="shooter">Shooter</option>
+                <option value="sports">Sports</option>
+                <option value="fighting">Fighting</option>
+                <option value="racing">Racing</option>
+                <option value="horror">Horror</option>
+                <option value="arcade">Arcade</option>
+                <option value="vr">VR</option>
               </select>
             </div>
             <div class="col-lg-9 text-end">
