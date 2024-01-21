@@ -142,6 +142,12 @@
 
 .add-cart {
   background-color: rgb(110, 110, 110);
+  border: 1px solid rgb(110, 110, 110);
+}
+
+.add-cart:hover {
+  background-color: rgb(155, 188, 251);
+  border: 1px solid rgb(110, 110, 110);
 }
 
 .add_cart_bt {
@@ -166,6 +172,12 @@
   width: 100%;
   opacity: 0.45;
   display: inline-block;
+}
+
+.image-preview {
+  width: 100px;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 8px;
 }
 
 /* My Acct */
