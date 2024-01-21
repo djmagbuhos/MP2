@@ -152,6 +152,22 @@
   background-color: rgb(110, 110, 110);
 }
 
+/* GAMES PAGES */
+#games_body {
+  background-color: rgb(24, 24, 24);
+}
+
+#div_heroimg {
+  position: relative;
+}
+
+#heroimg {
+  height: 100%;
+  width: 100%;
+  opacity: 0.45;
+  display: inline-block;
+}
+
 /* My Acct */
 
 #dp_myacct {
