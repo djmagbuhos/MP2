@@ -13,7 +13,6 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
-    <!-- will create separate jsfile trying first -->
 
     <link rel="stylesheet" href="css/styles.css" />
     <script>
@@ -22,40 +21,46 @@
         let my_text = await my_obj.text();
         let product = JSON.parse(my_text);
 
-        function generateProductCard(item) {
-          return `<div class="col-lg-3 my-2">
-                <div class="card card-products h-100">
-                  <a href="product_site/product_${item.item_id}.html">
-                    <img src="${item.image_card}" class="img-fluid card-img-top card_img_prod" alt="${item.item_name}"/>
-                  </a>
-                  <div class="card-body">
-                    <hr />
-                    <a class="card_name" href="product_site/product_${item.item_id}.html">
-                      <h4 class="card_name" title="${item.item_name}">${item.item_name}</h4>
-                    </a>
-                    <p class="card_price fs-5">₱${item.price}</p>
-                    <div>
-                      <button class='btn add_cart_bt text-light w-100' id='add_cart${item.item_id}'>Add to cart</button>
-                    </div>
-                  </div>
-                </div>
-              </div>`;
+        function generateProductCard(product) {
+          const productCard =
+            '<div class="col-lg-3 my-2"><div class="card card-products h-100"><a href="product_site/product_' +
+            product.item_id +
+            '"><img src="' +
+            product.image_card +
+            '" class="img-fluid card-img-top card_img_prod" alt="' +
+            product.item_name +
+            '"/></a><div class="card-body"><hr /><a class="card_name" href="product_site/product_' +
+            product.item_id +
+            '"><h4 class="card_name" title="' +
+            product.item_name +
+            '">' +
+            product.item_name +
+            '</h4></a><p class="card_price fs-5">₱' +
+            product.price +
+            '</p><div><button class="btn add_cart_bt text-light w-100" id="add_cart' +
+            product.item_id +
+            '">Add to cart</button></div></div></div></div>';
+
+          $("#games_display").append(productCard);
         }
 
         function displayProducts(filteredProducts) {
-          $("#games_display").empty(); // Clear existing content
+          $("#games_display").empty();
           filteredProducts.forEach((item) => {
-            $("#games_display").append(generateProductCard(item));
+            generateProductCard(item);
           });
         }
 
         $("#gcategories-dropdown").change(function () {
           const selectedCategory = $(this).val();
-          const filteredProducts = product.filter(
-            (item) =>
-              selectedCategory === "all" || item.genre === selectedCategory
-          );
-          displayProducts(filteredProducts);
+          if (selectedCategory == "all") {
+            displayProducts(product);
+          } else {
+            const filteredProducts = product.filter(
+              (item) => item.genre == selectedCategory
+            );
+            displayProducts(filteredProducts);
+          }
         });
 
         displayProducts(product);
@@ -213,13 +218,13 @@
                 <option value="all">All</option>
                 <option value="action">Action</option>
                 <option value="adventure">Adventure</option>
+                <option value="arcade">Arcade</option>
+                <option value="fighting">Fighting</option>
+                <option value="horror">Horror</option>
+                <option value="racing">Racing</option>
                 <option value="role-playing">Role-playing</option>
                 <option value="shooter">Shooter</option>
                 <option value="sports">Sports</option>
-                <option value="fighting">Fighting</option>
-                <option value="racing">Racing</option>
-                <option value="horror">Horror</option>
-                <option value="arcade">Arcade</option>
                 <option value="vr">VR</option>
               </select>
             </div>

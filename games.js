@@ -311,7 +311,7 @@ const games = [
     item_id: 28,
     item_name: "It Takes Two",
     platform: "PS4, PS5",
-    genre: "shooter",
+    genre: "adventure",
     price: "1799.99",
     image_card: "img/games/it_takes_2_card.webp",
     image_main: "img/games/it_takes_2_main.webp",
