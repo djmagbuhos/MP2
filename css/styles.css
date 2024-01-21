@@ -79,7 +79,7 @@
 
 /* HOME */
 #content_body {
-  background-color: rgb(253, 245, 233);
+  background-color: rgb(254, 254, 250);
 }
 
 .carousel .carousel-indicators button {
@@ -200,6 +200,10 @@
   color: ;
 } */
 /* Footer */
+#footer_newsletter {
+  /* background-color: rgb(53, 84, 153); */
+  background-color: rgb(102, 104, 110);
+}
 .footer_sm_logo {
   width: 40px;
 }
@@ -209,6 +213,27 @@
   color: white;
 }
 
+#subscribe-bar-2 {
+  background-color: rgb(41, 41, 41);
+  border: 1px solid rgb(41, 41, 41);
+}
+
 .footer_link {
   color: white;
+}
+
+.footer_link2 {
+  color: white;
+}
+
+.footer_link:hover {
+  color: rgb(155, 188, 251);
+}
+
+#fbot_text {
+  font-size: 12px;
+}
+
+#footer_bottom {
+  background-color: rgb(254, 254, 250);
 }
