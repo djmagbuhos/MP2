@@ -2,7 +2,7 @@ const products = [
   {
     item_id: 0,
     item_name: "Sony Playstation PS5",
-    genre: "Console",
+    genre: "console",
     price: "30680.00",
     image_card: "img/products/ps5_card.jpg",
     image_prod1: "img/products/ps5_prod1.jpg",
@@ -13,7 +13,7 @@ const products = [
   {
     item_id: 1,
     item_name: "Sony Playstation PS4",
-    genre: "Console",
+    genre: "console",
     price: "17580.00",
     image_card: "img/products/ps4_card.jpg",
     image_prod1: "img/products/ps4_prod1.jpg",
@@ -24,7 +24,7 @@ const products = [
   {
     item_id: 2,
     item_name: "Keychron K4 Pro",
-    genre: "Keyboard",
+    genre: "keyboard",
     price: "5895.00",
     image_card: "img/products/keychron_k4_card.jpg",
     image_prod1: "img/products/keychron_k4_prod1.jpg",
@@ -35,7 +35,7 @@ const products = [
   {
     item_id: 3,
     item_name: "Logitech PRO X 2",
-    genre: "Headset",
+    genre: "headset",
     price: "12790.00",
     image_card: "img/products/logitech_card.jpg",
     image_prod1: "img/products/logitech_prod1.jpg",
@@ -46,7 +46,7 @@ const products = [
   {
     item_id: 3,
     item_name: "DualSense Wireless Controller for PlayStation 5",
-    genre: "Controller",
+    genre: "controller",
     price: "4290.00",
     image_card: "img/products/controller_ps5_card.jpg",
     image_prod1: "img/products/controller_ps5_prod1.jpg",
@@ -57,7 +57,7 @@ const products = [
   {
     item_id: 3,
     item_name: "PlayStation VR2",
-    genre: "Console",
+    genre: "console",
     price: "34790.00",
     image_card: "img/products/ps_vr_card.jpg",
     image_prod1: "img/products/ps_vr_prod1.jpg",
@@ -68,7 +68,7 @@ const products = [
   {
     item_id: 4,
     item_name: "Thrustmaster T248",
-    genre: "Arcade",
+    genre: "arcade",
     price: "20995.00",
     image_card: "img/products/t248_card.jpg",
     image_prod1: "img/products/t248_prod1.jpg",
@@ -79,7 +79,7 @@ const products = [
   {
     item_id: 5,
     item_name: "Razer Kitsune All-Button Optical Arcade",
-    genre: "Arcade",
+    genre: "arcade",
     price: "18995.00",
     image_card: "img/products/all_button_card.jpg",
     image_prod1: "img/products/all_button_prod1.jpg",
@@ -90,7 +90,7 @@ const products = [
   {
     item_id: 6,
     item_name: "Hori Dual Charger for DualSense Wireless Controller",
-    genre: "Controller",
+    genre: "controller",
     price: "1195.00",
     image_card: "img/products/charger_card.jpg",
     image_prod1: "img/products/charger_prod1.jpg",
@@ -101,7 +101,7 @@ const products = [
   {
     item_id: 7,
     item_name: "Skull & Co Phantom Rack",
-    genre: "Accessory",
+    genre: "accessory",
     price: "795.00",
     image_card: "img/products/rack_card.jpg",
     image_prod1: "img/products/rack_prod1.jpg",
@@ -112,7 +112,7 @@ const products = [
   {
     item_id: 8,
     item_name: "Floating Grip Wall Mount for PlayStation",
-    genre: "Accessory",
+    genre: "accessory",
     price: "1295.00",
     image_card: "img/products/wall_mount_card.jpg",
     image_prod1: "img/products/wall_mount_prod1.jpg",
@@ -123,7 +123,7 @@ const products = [
   {
     item_id: 9,
     item_name: "Sony PlayStation 5 Access Controller",
-    genre: "Controller",
+    genre: "controller",
     price: "5090.00",
     image_card: "img/products/access_card.webp",
     image_prod1: "img/products/access_prod1.webp",
@@ -134,7 +134,7 @@ const products = [
   {
     item_id: 10,
     item_name: "DualShock4 Wireless Controller Cushion",
-    genre: "Merchandise",
+    genre: "merchandise",
     price: "995.00",
     image_card: "img/products/cushion_card.jpg",
     image_prod1: "img/products/cushion_prod1.jpg",
@@ -145,7 +145,7 @@ const products = [
   {
     item_id: 11,
     item_name: "SteelSeries Arena 7 Illuminated 2.1",
-    genre: "Speakers",
+    genre: "speakers",
     price: "17000.00",
     image_card: "img/products/speakers_card.jpg",
     image_prod1: "img/products/speakers_prod1.jpg",
@@ -156,7 +156,7 @@ const products = [
   {
     item_id: 12,
     item_name: "Hori Tactical Assault Commander TAC Mechanical Keypad",
-    genre: "Keyboard",
+    genre: "keyboard",
     price: "4995.00",
     image_card: "img/products/keypad_card.jpg",
     image_prod1: "img/products/keypad_prod1.jpg",
@@ -167,7 +167,7 @@ const products = [
   {
     item_id: 13,
     item_name: "Hori Wired Gaming Neckset",
-    genre: "Headset",
+    genre: "headset",
     price: "5995.00",
     image_card: "img/products/neckset_card.jpg",
     image_prod1: "img/products/neckset_prod1.jpg",
@@ -178,7 +178,7 @@ const products = [
   {
     item_id: 14,
     item_name: "Paladone Spiderman Icon Light",
-    genre: "Merchandise",
+    genre: "merchandise",
     price: "1095.00",
     image_card: "img/products/paladone_card.jpg",
     image_prod1: "img/products/paladone_prod1.jpg",

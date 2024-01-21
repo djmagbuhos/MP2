@@ -20,25 +20,43 @@
         let my_text = await my_obj.text();
         let product = JSON.parse(my_text);
 
-        for (let i = 0; i < product.length; i++) {
-          let card =
-            '<div class="col-lg-3 my-2"><div class="card card-products h-100"><a href="product_site/product_ + product[i].item_id.html"><img src="' +
-            product[i].image_card +
-            '" class="img-fluid card-img-top card_img_prod" alt="' +
-            product[i].item_name +
-            '"/></a><div class="card-body"><hr /><a class="card_name" href="product_site/product_' +
-            product[i].item_id.html +
-            '"><h4 class="card_name" title="' +
-            product[i].item_name +
-            '">' +
-            product[i].item_name +
-            '</h4></a><p class="card_price fs-5">₱' +
-            product[i].price +
-            "</p><div><button class='btn add_cart_bt text-light w-100' id='add_cart" +
-            product[i].item_id +
-            "'>Add to cart</button></div></div></div></div>";
-          $("#products_display").append(card);
+        function generateProductCard(item) {
+          return `<div class="col-lg-3 my-2">
+                <div class="card card-products h-100">
+                  <a href="product_site/product_${item.item_id}.html">
+                    <img src="${item.image_card}" class="img-fluid card-img-top card_img_prod" alt="${item.item_name}"/>
+                  </a>
+                  <div class="card-body">
+                    <hr />
+                    <a class="card_name" href="product_site/product_${item.item_id}.html">
+                      <h4 class="card_name" title="${item.item_name}">${item.item_name}</h4>
+                    </a>
+                    <p class="card_price fs-5">₱${item.price}</p>
+                    <div>
+                      <button class='btn add_cart_bt text-light w-100' id='add_cart${item.item_id}'>Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>`;
         }
+
+        function displayProducts(filteredProducts) {
+          $("#products_display").empty(); // Clear existing content
+          filteredProducts.forEach((item) => {
+            $("#products_display").append(generateProductCard(item));
+          });
+        }
+
+        $("#pcategories-dropdown").change(function () {
+          const selectedCategory = $(this).val();
+          const filteredProducts = product.filter(
+            (item) =>
+              selectedCategory === "all" || item.genre === selectedCategory
+          );
+          displayProducts(filteredProducts);
+        });
+
+        displayProducts(product);
       }
 
       getData("http://localhost:3001/api/product");
@@ -190,8 +208,15 @@
                 <option value="select_genre" selected disabled>
                   Select product category...
                 </option>
-                <option value="action">Action</option>
-                <option value="rpg">RPG</option>
+                <option value="all">All</option>
+                <option value="console">Console</option>
+                <option value="keyboard">Keyboard</option>
+                <option value="headset">Headset</option>
+                <option value="controller">Controller</option>
+                <option value="arcade">Arcade</option>
+                <option value="accessory">Accessory</option>
+                <option value="merchandise">Merchandise</option>
+                <option value="speakers">Speakers</option>
               </select>
             </div>
             <div class="col-lg-9 text-end">
