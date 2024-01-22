@@ -23,20 +23,40 @@ app.get("/api/games", (req, res) => {
 app.get("/api/product/:id", (req, res) => {
   let products = false;
   for (let i = 0; i < p.length; i++) {
-    if (p[i].id == Number(req.params.id)) {
+    if (p[i].item_id == Number(req.params.id)) {
       products = p[i];
       break;
     }
+  }
+
+  if (products) {
+    res.send(products);
+    console.log(products);
+  } else {
+    let err = "Product not found!";
+    res.status(404);
+    res.send(err);
+    console.error(err);
   }
 });
 
 app.get("/api/games/:id", (req, res) => {
   let games = false;
   for (let i = 0; i < g.length; i++) {
-    if (g[i].id == Number(req.params.id)) {
+    if (g[i].item_id == Number(req.params.id)) {
       games = g[i];
       break;
     }
+  }
+
+  if (games) {
+    res.send(games);
+    console.log(games);
+  } else {
+    let err = "Game not found!";
+    res.status(404);
+    res.send(err);
+    console.error(err);
   }
 });
 
