@@ -15,6 +15,32 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
     <link rel="stylesheet" href="../css/styles.css" />
+    <script>
+      async function putData(data, cart) {
+        let req = await fetch(data, {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(cart),
+        });
+        let res = await req.json();
+        console.log(res);
+      }
+
+      $(document).ready(function (x) {
+        $(".add-cart").click(function (x) {
+          let item_data = {
+            item_name: "Ghost of Tsushima",
+            price: "2299.99",
+            image_card: "img/games/tsushima_card.jpg",
+          };
+          x.preventDefault();
+
+          putData("http://localhost:3001/api/cart", item_data);
+        });
+      });
+    </script>
 
     <!-- Change title name -->
     <title>Playstation World - Ghost of Tsushima</title>

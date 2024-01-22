@@ -42,6 +42,16 @@
             '">Add to cart</button></div></div></div></div>';
 
           $("#games_display").append(productCard);
+
+          $("#add_cart" + product.item_id).click(function () {
+            let item_data = {
+              item_name: product.item_name,
+              price: product.price,
+              image_card: product.image_card,
+            };
+
+            putData("http://localhost:3001/api/cart", item_data);
+          });
         }
 
         function displayProducts(filteredProducts) {
@@ -64,6 +74,18 @@
         });
 
         displayProducts(product);
+      }
+
+      async function putData(data, cart) {
+        let req = await fetch(data, {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(cart),
+        });
+        let res = await req.json();
+        console.log(res);
       }
 
       getData("http://localhost:3001/api/games");
