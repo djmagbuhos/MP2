@@ -158,6 +158,14 @@
   background-color: rgb(110, 110, 110);
 }
 
+.add_cart_bt:active {
+  background-color: rgb(1, 35, 65);
+}
+
+.add_cart_bt:visited {
+  background-color: rgb(0, 112, 209);
+}
+
 /* GAMES PAGES */
 #games_body {
   background-color: rgb(24, 24, 24);
@@ -193,6 +201,9 @@
 }
 
 /* CART PAGE */
+.btn-close {
+  margin-left: auto;
+}
 .payment-logo {
   width: 30px;
 }

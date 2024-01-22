@@ -30,9 +30,11 @@ async function getCartData(data) {
   let my_text = await my_obj.text();
   let cart = JSON.parse(my_text);
 
+  let total_price = 0;
+
   for (let i = 0; i < cart.length; i++) {
     let add_card =
-      '<div class="card mb-3 shadow bg-white rounded">' +
+      '<div class="card mb-3 shadow bg-white rounded"><button class="btn-close custom-align-right"></button>' +
       '<div class="card-body">' +
       '<div class="d-flex justify-content-between">' +
       '<div class="d-flex flex-row align-items-center">' +
@@ -63,9 +65,14 @@ async function getCartData(data) {
       "</div>" +
       "</div>";
 
+    semi_total = Number(cart[i].price);
+    total_price += semi_total;
+
     $("#add_to_cart").append(add_card);
-    console.log(add_card);
+    console.log(total_price);
   }
+  $("#sub_total").text(total_price.toFixed(2));
+  $("#grand_total").text((total_price + 90).toFixed(2));
 }
 
 // Call functions to get data
