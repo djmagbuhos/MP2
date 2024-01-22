@@ -38,13 +38,58 @@
       getData("http://localhost:3001/api/address");
     </script>
 
-    <script>
+    <!-- <script>
       $(document).ready(function () {
         let add_card = localStorage.getItem("add_card");
-        if (add_card) {
-          $("#add_to_cart").append(add_card);
-        }
+        $("#add_to_cart").append(add_card);
       });
+    </script> -->
+
+    <script>
+      async function getData(data) {
+        let my_obj = await fetch(data);
+        let my_text = await my_obj.text();
+        let cart = JSON.parse(my_text);
+
+        for (let i = 0; i < cart.length; i++) {
+          let add_card =
+            '<div class="card mb-3 shadow bg-white rounded">' +
+            '<div class="card-body">' +
+            '<div class="d-flex justify-content-between">' +
+            '<div class="d-flex flex-row align-items-center">' +
+            '<div class="border d-none d-lg-block">' +
+            '<img src="' +
+            cart[i].image_card +
+            '" class="img-fluid rounded-3 me-2" alt="' +
+            cart[i].item_name +
+            '" style="width: 100px" />' +
+            "</div>" +
+            '<div class="ms-2 fs-5 d-none d-sm-block">' +
+            "<strong><p>" +
+            cart[i].item_name +
+            "</p></strong>" +
+            "</div>" +
+            '<div class="ms-2 d-block d-sm-none">' +
+            "<strong><p>" +
+            cart[i].item_name +
+            "</p></strong>" +
+            "</div>" +
+            "</div>" +
+            '<div class="d-flex flex-row align-items-center">' +
+            "<p>₱" +
+            cart[i].price +
+            "</p>" +
+            "</div>" +
+            "</div>" +
+            "</div>" +
+            "</div>";
+
+          $("#add_to_cart").append(add_card);
+          console.log(add_card);
+        }
+      }
+
+      getData("http://localhost:3001/api/cart");
     </script>
 
     <link
