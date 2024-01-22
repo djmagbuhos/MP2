@@ -26,6 +26,7 @@
         getData("http://localhost:3001/api/address");
       }
 
+      ///GETTING ADDRESS
       async function getData(data) {
         let my_obj = await fetch(data);
         let my_text = await my_obj.text();
@@ -80,6 +81,7 @@
 
       getData("http://localhost:3001/api/address");
 
+      //ADDING ADDRESS UPON SUBMIT
       $(document).ready(function (x) {
         $("#add_address").submit(function (x) {
           let address_data = {
