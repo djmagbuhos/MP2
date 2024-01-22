@@ -11,7 +11,7 @@ async function putData(data, address) {
   let res = await req.json();
   console.log(res);
 
-  getData("http://localhost:3001/api/address");
+  getData("https://mp2-express-pebt.onrender.com/api/address");
 }
 
 ///GETTING ADDRESS
@@ -67,7 +67,7 @@ async function getData(data) {
   }
 }
 
-getData("http://localhost:3001/api/address");
+getData("https://mp2-express-pebt.onrender.com/api/address");
 
 //ADDING ADDRESS UPON SUBMIT
 $(document).ready(function (x) {
@@ -81,8 +81,8 @@ $(document).ready(function (x) {
     };
     x.preventDefault();
 
-    putData("http://localhost:3001/api/address", address_data);
-    getData("http://localhost:3001/api/address");
+    putData("https://mp2-express-pebt.onrender.com/api/address", address_data);
+    getData("https://mp2-express-pebt.onrender.com/api/address");
   });
 });
 ///END OF ADDING ADDRESS
@@ -93,7 +93,9 @@ $(document).ready(function () {
   $(document).on("click", "button.btn-danger", function () {
     let addressId = $(this).attr("id").split("_")[2];
     console.log("Deleting address with ID:", addressId);
-    deleteAddress("http://localhost:3001/api/address/" + addressId);
+    deleteAddress(
+      "https://mp2-express-pebt.onrender.com/api/address/" + addressId
+    );
   });
 });
 
@@ -105,7 +107,7 @@ async function deleteAddress(data) {
     let res = await req.json();
     console.log("Delete response:", res);
 
-    getData("http://localhost:3001/api/address");
+    getData("https://mp2-express-pebt.onrender.com/api/address");
   } catch (error) {
     console.error("Error deleting address:", error);
   }
@@ -126,7 +128,7 @@ $(document).ready(function () {
       rec_mnumber: $("#re_number", this).val(),
     };
     editAddress(
-      "http://localhost:3001/api/address/" + addressIndex,
+      "https://mp2-express-pebt.onrender.com/api/address/" + addressIndex,
       editedAddress
     );
   });
@@ -143,7 +145,7 @@ async function editAddress(data, editedAddress) {
     });
     let res = await req.json();
     console.log("Edit response:", res);
-    getData("http://localhost:3001/api/address");
+    getData("https://mp2-express-pebt.onrender.com/api/address");
     $(`.edit-modal`).modal("hide");
   } catch (error) {
     console.error("Error editing address:", error);

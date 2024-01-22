@@ -32,7 +32,7 @@ async function getData(data) {
         image_card: product.image_card,
       };
 
-      putData("http://localhost:3001/api/cart", item_data);
+      putData("https://mp2-express-pebt.onrender.com/api/cart", item_data);
     });
   }
 
@@ -70,4 +70,4 @@ async function putData(data, cart) {
   console.log(res);
 }
 
-getData("http://localhost:3001/api/games");
+getData("https://mp2-express-pebt.onrender.com/api/games");

@@ -69,5 +69,5 @@ async function getCartData(data) {
 }
 
 // Call functions to get data
-getAddressData("http://localhost:3001/api/address");
-getCartData("http://localhost:3001/api/cart");
+getAddressData("https://mp2-express-pebt.onrender.com/api/address");
+getCartData("https://mp2-express-pebt.onrender.com/api/cart");
