@@ -8,7 +8,7 @@ const a = ad.address;
 app.use(ex.json());
 app.use(cors());
 
-//get
+//get - address
 app.get("/api/address", (req, res) => {
   res.send(a);
 });
@@ -33,17 +33,6 @@ app.get("/api/address/:id", (req, res) => {
   }
 });
 
-// no need to filter address - save only incase needed to use
-// app.get("/api/pets/list/species", (req, res) => {
-//   let species = [];
-//   for (let i = 0; i < p.length; i++) {
-//     if (species.includes(p[i].species) == false) {
-//       species.push(p[i].species);
-//     }
-//   }
-
-//   res.send(species);
-// }); ////
 //
 //
 // NEW ADDRESS
@@ -61,7 +50,9 @@ app.put("/api/address", (req, res) => {
   a.push(new_address);
   res.send(new_address);
 });
-
+//
+//
+//UPDATE ADDRESS
 app.put("/api/address/:id", (req, res) => {
   let address = false;
   for (let i = 0; i < a.length; i++) {
@@ -96,7 +87,9 @@ app.put("/api/address/:id", (req, res) => {
     res.send(err);
   }
 });
-
+//
+//
+//DELETE ADDRESS
 app.delete("/api/address/:id", (req, res) => {
   let address = false;
   for (let i = 0; i < a.length; i++) {
